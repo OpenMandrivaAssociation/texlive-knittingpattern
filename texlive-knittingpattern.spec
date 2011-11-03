@@ -1,3 +1,9 @@
+# revision 17205
+# category Package
+# catalog-ctan /macros/latex/contrib/knittingpattern
+# catalog-date 2010-03-09 13:13:30 +0100
+# catalog-license lppl1.3
+# catalog-version undef
 Name:		texlive-knittingpattern
 Version:	20100309
 Release:	1
@@ -45,6 +51,7 @@ concentrate on the pattern.
 %doc %{_texmfdistdir}/doc/latex/knittingpattern/lion.png
 %doc %{_texmfdistdir}/doc/latex/knittingpattern/template.pdf
 %doc %{_texmfdistdir}/doc/latex/knittingpattern/template.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -55,3 +62,5 @@ concentrate on the pattern.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
