@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-knittingpattern
 Version:	20100309
-Release:	2
+Release:	3
 Summary:	Create knitting patterns
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/knittingpattern
